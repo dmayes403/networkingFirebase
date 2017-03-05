@@ -1,11 +1,14 @@
 <section class="loginRequestContainer">
   <h1> Welcome to <span class="logo">gogo!</span></h1>
   <p> Please login or sign up </p>
-  <input class="login userName" placeholder="Username..." ng-model="userName" required><br />
+  <input class="login userName" placeholder="Email..." ng-model="email" required><br />
   <input class="login password" type="password" placeholder="Password..." ng-model="password" required><br />
-  <a class="submit" ng-click="checkCredentials(userName, password)"><div class="submit">Submit</div></a>
+  <!-- <a class="submit" ng-click="checkCredentials(email, password)"><div class="submit">Submit</div></a> -->
+  <a class="submit" ng-click="addFireComment('hello!')"><div class="submit">Submit</div></a>
 
   <p><a ui-sref="signup">Sign Up</a> for further access</p>
+
+  {{object[0].$id}}
 
 
 </section>

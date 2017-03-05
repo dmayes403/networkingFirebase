@@ -1,4 +1,4 @@
-angular.module('networkingApp', ['ui.router'])
+angular.module('networkingApp', ['ui.router', 'firebase'])
     .config(function($stateProvider, $urlRouterProvider){
       $stateProvider
           .state('login',{

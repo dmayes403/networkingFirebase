@@ -1,10 +1,11 @@
 angular.module('networkingApp')
     .controller('signupCtrl', function($scope, userServ){
 
-      $scope.createUser = function(firstName, lastName, age, gender, city, state, username, password){
-        userServ.createUser(firstName, lastName, age, gender, city, state, username, password);
+      $scope.createUser = function(firstName, lastName, email, age, gender, city, state, username, password){
+        userServ.createUser(firstName, lastName, age, email, gender, city, state, username, password);
         $scope.firstName = '';
         $scope.lastName = '';
+        $scope.email = '';
         $scope.age = '';
         $scope.gender = '';
         $scope.city = '';
