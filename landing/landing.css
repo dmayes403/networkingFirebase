@@ -1,0 +1,111 @@
+.landingContainer {
+  text-align: center;
+}
+
+.rightProfileColumn {
+  margin-left: 35px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.leftProfileColumn {
+  display: inline-block;
+}
+
+.leftProfileColumn img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+/*.profileHeader {
+  background: #51aae8;
+  width: 50%;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  text-align: left;
+}*/
+
+.profileHeader {
+  background: #51aae8;
+  width: 50%;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  text-align: left;
+}
+
+.searchFriends {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+}
+
+.rightProfileColumn h1 {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.rightProfileColumn p {
+  font-size: 18px;
+  line-height: 5px;
+}
+
+.commentContainer {
+  background: #51aae8;
+  width: 50%;
+  color: white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.newComment {
+  height: 40px;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.commentThread {
+  background: white;
+  width: 50%;
+  color: #51aae8;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 3px solid #51aae8;
+  padding: 20px;
+  margin: auto;
+  /*margin-top: 10px;*/
+  margin-bottom: 100px;
+  text-align: left;
+}
+
+.commentThread h1 {
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+.myFriends img {
+  object-fit: cover;
+  width: 75px;
+  height: 75px;
+  margin: 0px 2.5px;
+}
+
+.myFriends {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}

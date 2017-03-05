@@ -1,0 +1,17 @@
+<main class="friendsContainer">
+  <section class="friendsProfileHeader" ng-repeat="friend in allFriends">
+    <div class="friendsLeftProfileColumn">
+      <img ng-src="{{friend.headShot}}">
+    </div>
+    <div class="friendsRightProfileColumn">
+      <h1>{{friend.firstName + ' ' + friend.lastName}}</h1>
+      <p> Age: {{friend.age}} </p>
+      <p>Gender: {{friend.gender}}</p>
+      <p> City: {{friend.city}} </p>
+      <p>State: {{friend.state}}</p>
+    </div>
+    <div class="addFriend" ng-click="addFriend(friend.id)">
+      <img src="https://www.materialui.co/materialIcons/social/person_add_white_2048x2048.png">
+    </div>
+  </section>
+</main>

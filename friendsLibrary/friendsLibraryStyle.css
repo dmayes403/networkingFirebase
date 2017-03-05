@@ -1,0 +1,60 @@
+.friendsContainer {
+  margin-bottom: 100px;
+}
+
+.friendsRightProfileColumn {
+  margin-left: 35px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.friendsLeftProfileColumn {
+  display: inline-block;
+}
+
+.friendsLeftProfileColumn img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+.friendsProfileHeader {
+  background: #51aae8;
+  width: 50%;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+}
+
+.friendsRightProfileColumn h1 {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.friendsRightProfileColumn p {
+  font-size: 18px;
+  line-height: 5px;
+}
+
+.addFriend img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.addFriend {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+}
+
+.addFriend:active {
+  background: #dfdfdf
+}
+
+a {
+  color: white;
+}

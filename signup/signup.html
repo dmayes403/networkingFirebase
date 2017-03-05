@@ -1,0 +1,13 @@
+<section class="signupContainer">
+  <h1>Sign Up for more access to <span class="logo">gogo!</span></h1>
+    <input class="signup" placeholder="firstName" ng-model="firstName" required><br />
+    <input class="signup" placeholder="lastName" ng-model="lastName" required><br />
+    <input class="signup" placeholder="age" ng-model="age" required><br />
+    <input class="signup" placeholder="gender" ng-model="gender" required><br />
+    <input class="signup" placeholder="city" ng-model="city" required><br />
+    <input class="signup" placeholder="state" ng-model="state" required><br />
+    <input class="signup" placeholder="username" ng-model="username" required><br />
+    <input class="signup" placeholder="password" ng-model="password" required><br />
+  <a class="submit"><div class="submit" ng-click="createUser(firstName, lastName, age, gender, city, state, username, password)">Submit</div></a>
+  <p><a ui-sref="login">Login</a> to access your network</p>
+</section>
