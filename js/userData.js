@@ -17,9 +17,9 @@
           const rootRef = firebase.database().ref().child('users');
           this.object = $firebaseArray(rootRef);
 
-          this.addFireComment = function(word){
-            this.object.$add(word);
-          }
+          // this.addFireComment = function(word){
+          //   this.object.$add(word);
+          // }
 
 
           this.getUser = function(id){
@@ -62,33 +62,70 @@
                 return currentUserData;
             }
 
+            // this.addComment = function(id, comment){
+            //   for(var i = 0; i < this.object.length; i++){
+            //     if (this.object[i].$id === id) {
+            //       console.log(this.object[i].comments)
+            //       this.object[i].comments.unshift(comment);
+            //       }
+            //   }
+            // }
+            //
+              this.addFireComment = function(word){
+                this.comments = this.object[0].comments;
+                this.comments.push('hello');
+                this.object[0].comments.update(this.comments)
+                console.log(this.object[0].comments);
+              }
+
 
           // new user constructor  & function ////////////
 
           var newId = 11;
 
-          var newUser = function(firstName, lastName, age, gender, city, state, username, password){
-            this.id = newId;
+          // var newUser = function(firstName, lastName, age, gender, city, state, username, password){
+          //   this.id = newId;
+          //   this.firstName = firstName;
+          //   this.lastName = lastName;
+          //   this.age = age;
+          //   this.gender = gender;
+          //   this.city = city;
+          //   this.state = state;
+          //   this.username = username;
+          //   this.password = password;
+          //   this.comments = [];
+          // };
+          //
+          // this.createUser = function(firstName, lastName, age, gender, city, state, username, password){
+          //   if(firstName && lastName && age && gender && city && state && username && password){
+          //     var currentUserData = JSON.parse(localStorage.getItem(1));
+          //     currentUserData.unshift(new newUser(firstName, lastName, age, gender, city, state, username, password));
+          //     newId++;
+          //     localStorage.setItem(1, JSON.stringify(currentUserData));
+          //     return currentUserData;
+          //   } else {
+          //     console.log('there are still blanks!');
+          //   }
+          // }
+
+          var newUser = function(firstName, lastName, email, age, gender, city, state, username, password){
+            console.log('hello');
             this.firstName = firstName;
             this.lastName = lastName;
+            this.email = email;
             this.age = age;
             this.gender = gender;
             this.city = city;
             this.state = state;
             this.username = username;
             this.password = password;
-            this.comments = [];
+            this.comments = ['first comment'];
           };
 
-          this.createUser = function(firstName, lastName, age, gender, city, state, username, password){
-            if(firstName && lastName && age && gender && city && state && username && password){
-              var currentUserData = JSON.parse(localStorage.getItem(1));
-              currentUserData.unshift(new newUser(firstName, lastName, age, gender, city, state, username, password));
-              newId++;
-              localStorage.setItem(1, JSON.stringify(currentUserData));
-              return currentUserData;
-            } else {
-              console.log('there are still blanks!');
+          this.createUser = function(firstName, lastName, email, age, gender, city, state, username, password){
+            if(firstName && lastName && email && age && gender && city && state && username && password){
+              console.log(this.comments);
+              this.object.$add(new newUser(firstName, lastName, email, age, gender, city, state, username, password));
             }
           }
 

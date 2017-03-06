@@ -14,4 +14,8 @@ angular.module('networkingApp')
         $scope.password = '';
       }
 
+      $scope.addFireComment = function(word){
+        userServ.addFireComment(word);
+      }
+
     })

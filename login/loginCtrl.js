@@ -10,8 +10,8 @@ angular.module('networkingApp')
           }
         }
 
-        $scope.addFireComment = function(word){
-          userServ.addFireComment(word);
-        }
+        // $scope.addFireComment = function(word){
+        //   userServ.addFireComment(word);
+        // }
 
     })
